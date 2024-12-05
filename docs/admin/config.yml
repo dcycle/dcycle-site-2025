@@ -15,6 +15,7 @@ media_folder: 'hugo/static/media'
 public_folder: "/media"
 collections:
   - name: 'posts'
+    format: toml-frontmatter
     create: true
     label: 'Posts'
     label_singular: "Post"
@@ -30,3 +31,4 @@ collections:
           { label: 'Image', name: 'image', required: false, widget: 'image' }
         ]
       }
+      - { label: 'Content', name: 'body', widget: 'markdown', required: false }
