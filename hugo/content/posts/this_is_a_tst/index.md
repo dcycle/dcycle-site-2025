@@ -1,5 +1,5 @@
 ---
-title: This is a tst
+title: This is a test
 cover:
   image: images/badge_burn_badge.png
 ---
