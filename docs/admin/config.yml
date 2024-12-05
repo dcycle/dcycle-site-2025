@@ -17,6 +17,16 @@ collections:
   - name: 'posts'
     create: true
     label: 'Posts'
+    label_singular: "Post"
     folder: 'hugo/content/posts'
+    # Support Hugo page bundles that puts index.md and images in folders named by slug
+    # See https://blog.millerti.me/2021/12/23/supporting-hugo-page-bundles-in-netlify-cms/
+    path: "{{slug}}/index"
+    media_folder: "images"
+    public_folder: "images"
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Cover Image', name: 'cover', widget: 'object', fields: [
+          { label: 'Image', name: 'image', required: false, widget: 'image' }
+        ]
+      }
