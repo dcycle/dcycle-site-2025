@@ -1,0 +1,13 @@
+---
+locale: 'en'
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
+backend:
+  # See https://www.netlifycms.org/docs/authentication-backends/#github-backend
+  name: github
+  repo: dcycle/dcycle-site-2025
+  branch: master
+  base_url: https://auth.static.dcycle.com
+  auth_endpoint: auth/github/alberto56
