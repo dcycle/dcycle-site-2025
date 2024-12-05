@@ -5,4 +5,4 @@ cover:
 ---
 Test here
 
-![](images/badge_burn_badge.png)
+![alt](images/badge_burn_badge.png "title")
